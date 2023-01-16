@@ -9,18 +9,19 @@
 <body style="height: 100vh;">
 
 <h1>La requete wikidata </h1>
-<p>Theme : université</p>
-<p> SELECT ?university ?inception ?country ?countryLabel ?image ?coordinate_location WHERE {
+<p>Theme : Internet</p>
+<p>SELECT ?Internet ?InternetLabel ?inception ?title ?main_subject ?main_subjectLabel WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-  ?university wdt:P31 wd:Q3918.
-  OPTIONAL { ?university wdt:P571 ?inception. }
-  OPTIONAL { ?university wdt:P17 ?country. }
-  OPTIONAL { ?university wdt:P18 ?image. }
-  OPTIONAL { ?university wdt:P625 ?coordinate_location. }</p>
+  ?Internet wdt:P921 wd:Q75.
+  OPTIONAL { ?Internet wdt:P571 ?inception. }
+  OPTIONAL { ?Internet wdt:P1476 ?title. }
+  OPTIONAL { ?Internet wdt:P921 ?main_subject. }
+}
+
+</p>
 
   <h2>Resultat de la requête </h2>
-  <iframe style="width: 100%; height:100%; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Funiversity%20%3Finception%20%3Fcountry%20%3FcountryLabel%20%3Fimage%20%3Fcoordinate_location%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Funiversity%20wdt%3AP31%20wd%3AQ3918.%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP571%20%3Finception.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-
+  <iframe style="width: 100%; height: 100%; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FInternet%20%3FInternetLabel%20%3Finception%20%3Ftitle%20%3Fmain_subject%20%3Fmain_subjectLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FInternet%20wdt%3AP921%20wd%3AQ75.%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP571%20%3Finception.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP1476%20%3Ftitle.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP921%20%3Fmain_subject.%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
     
 </body>
