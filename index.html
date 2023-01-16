@@ -10,19 +10,18 @@
 
 <h1>La requete wikidata </h1>
 <p>Theme : Internet</p>
-<p>SELECT ?Internet ?InternetLabel ?inception ?title ?main_subject ?main_subjectLabel WHERE {
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-  ?Internet wdt:P921 wd:Q75.
-  OPTIONAL { ?Internet wdt:P571 ?inception. }
-  OPTIONAL { ?Internet wdt:P1476 ?title. }
-  OPTIONAL { ?Internet wdt:P921 ?main_subject. }
-}
+<p>SELECT ?Internet ?title ?main_subject ?main_subjectLabel ?author_name_string WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    ?Internet wdt:P921 wd:Q75;
+      wdt:P1476 ?title;
+      wdt:P921 ?main_subject.
+    ?Internet wdt:P2093 ?author_name_string. 
+  }
 
 </p>
 
   <h2>Resultat de la requête </h2>
-  <iframe style="width: 100%; height: 100%; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FInternet%20%3FInternetLabel%20%3Finception%20%3Ftitle%20%3Fmain_subject%20%3Fmain_subjectLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FInternet%20wdt%3AP921%20wd%3AQ75.%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP571%20%3Finception.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP1476%20%3Ftitle.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FInternet%20wdt%3AP921%20%3Fmain_subject.%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-
+  <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FInternet%20%3Ftitle%20%3Fmain_subject%20%3Fmain_subjectLabel%20%3Fauthor_name_string%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FInternet%20wdt%3AP921%20wd%3AQ75%3B%0A%20%20%20%20wdt%3AP1476%20%3Ftitle%3B%0A%20%20%20%20wdt%3AP921%20%3Fmain_subject.%0A%20%20%3FInternet%20wdt%3AP2093%20%3Fauthor_name_string.%20%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
     
 </body>
 </html>
