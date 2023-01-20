@@ -1,35 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>Dataviz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    </head>
+<title>Dataviz</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+</head>
+
 <body>
+    <style>
+        body{
+            font-family:'Merriweather', serif;
+            font-size: 18px;
+            background: #f2fcfe;
+        }
+        .couleurtitre{
+            color:#36D1DC;
+        }
+        .outil{
+            color:#8360c3;
+        }
+       
+.cover{
+    height: 250px;
+    background-image: url('covid.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    </style>
+    <div class="100-vw">
+        <div class="cover">
+                    </div>
 
-<div class="container">
-    <div class="row">
-        <h2>Nombre de cas confirmés par région OMS  (2019-2020)</h2>
-        <div class="col-12 p-5">
-            <iframe width="800" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlFiITVzl3MAjC58hUolr4cc75OCN91EsgdaH4076MEmyKOnXVj7Dvv4JjGpTbl2peoG4ZjJVm9olE/pubchart?oid=418279487&amp;format=interactive"></iframe>   </div>
-        
-        <h2>Nombre de rétablis et nombre de morts par région OMS (2019-2020)</h2>
-        <div class="col-12">
-            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlFiITVzl3MAjC58hUolr4cc75OCN91EsgdaH4076MEmyKOnXVj7Dvv4JjGpTbl2peoG4ZjJVm9olE/pubchart?oid=869127612&amp;format=interactive"></iframe>     </div>
-        <div class="col-12">
-            <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~cherikfarah/5.embed"></iframe>  </div>
-        <div class="col-12">
-            <iframe width="1000" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlFiITVzl3MAjC58hUolr4cc75OCN91EsgdaH4076MEmyKOnXVj7Dvv4JjGpTbl2peoG4ZjJVm9olE/pubchart?oid=1784529397&amp;format=interactive"></iframe>
-        </div>
-        <div class="col-12">
-            <h2>Nuage de mots COVID-19</h2>
-            <div align="center">
-                <iframe style='width: 640px; height: 472px;' src='https://voyant-tools.org/tool/Cirrus/?visible=255&corpus=f74aac53a40fb2309099c99dd274e401'></iframe>
-                </div>
+                   
+    </div>
 
-        </div>
-       </div> 
+    <div class="container">
+ <!--  <div class="pt-3">Thème:
+        <p>COVID-19</p>
+    </div>--> 
+<div class="py-5">
+    <strong >Membres:</strong>
+<p class="pt-3">Farah CHERIK</p>
+<p>Ikram JAWHAR</p>
+<p>Hafsa OURARI</p>
+<p>Qissy CHERIK</p>
 </div>
+
+
+
+
+
+        <h1 class=" pT-5 couleurtitre"><strong>COVID-19</strong></h1>
+        <p class=" def">
+            Apparue à Wuhan en Chine fin 2019, la maladie Covid-19, le nom donné par l'OMS le 11 février 2020 à une nouvelle maladie infectieuse respiratoire apparue en décembre 2019 et causée par le coronavirus SARS-CoV-2.
+Très fréquents, ils peuvent aussi bien provoquer un simple rhume qu’une grave infection respiratoire de type pneumonie, à l’origine d’épidémies mortelles comme ce fut le cas avec le Sras ou le Mers et maintenant avec le Covid-19.
+        </p>
+        <p>Chez l’Homme, ces maladies vont du rhume banal à une infection pulmonaire sévère, responsable d’une détresse respiratoire aiguë.</p>
+      <h4 class="py-2"><strong>Signification du mot Covid-19</strong></h4>
+     
+      <p class="px-3">  <strong>"Co"</strong> pour "corona",</p>
+    <p class="px-3">  <strong>"vi"</strong> pour "virus"</p>
+       
+       
+        <p class="px-3"><strong>"D"</strong> pour " disease" ("maladie" en anglais).</p>
+       
+      <p class="px-3"> <strong> 19</strong> pour l'année de son apparition : 2019.</p> 
+       
+        <div class="row">
+            <h1 class=" pt-5 couleurtitre"><strong>Modèles graphiques</strong></h1>
+           
+            <div class="col-12  ">
+                <h2 class="py-5"><strong>Nombre de cas confirmés par région OMS (2019-2020)</strong></h2>
+                <div class="m-auto ">
+                   
+                <iframe class="" width="500" height="400" frameborder="0" scrolling="no"
+                    src="//plotly.com/~cherikfarah/7.embed"></iframe>
+                    <p class="pt-3">Source : <a href="https://www.kaggle.com/code/imdevskp/covid-19-analysis-visualization-comparisons/data?select=2019_nC0v_20200121_20200126+-+SUMMARY.csv">https://www.kaggle.com/code/imdevskp/covid-19-analysis-visualization-comparisons/data?select=2019_nC0v_20200121_20200126+-+SUMMARY.csv</a> </p>
+                <p class="outil pt-3"> <strong>Fait avec : Plotly</strong></p>
+                </div>
+                </div>
+                <div class="col-12 ">
+                    <h2 class="py-5"><strong>Nombre de personnes rétablies et nombre de morts par région OMS (2019-2020)</strong></h2>
+                    <div class="m-auto">
+                      
+                    <img src="viz.png" alt="" style="height:350px;width:600px  ;">
+                    <p class="pt-3">Source : <a href="https://www.kaggle.com/code/imdevskp/covid-19-analysis-visualization-comparisons/data?select=2019_nC0v_20200121_20200126+-+SUMMARY.csv">https://www.kaggle.com/code/imdevskp/covid-19-analysis-visualization-comparisons/data?select=2019_nC0v_20200121_20200126+-+SUMMARY.csv</a> </p>
+                    <p class="outil pt-3"> <strong>Fait avec : RAWGraphs</strong></p>
+                    </div>  </div>
+          
+                     
+                       <div class="col-12 ">
+                        <h2 class="py-5"><strong>Progressionde la vaccination dans le monde (2019-2021)</strong></h2>
+                        <div class="m-auto">
+                            
+                            <img src="2023-01-20_12h18_43.png" alt="" height="350" width="600">
+                            <p class="pt-3">Source : <a href="https://www.kaggle.com/datasets/gpreda/covid-world-vaccination-progress">https://www.kaggle.com/datasets/gpreda/covid-world-vaccination-progress</a> </p>
+                            <p class="outil pt-3"> <strong>Fait avec : plotly</strong></p>
+                        </div>
+                    </div>
+                        <div class="col-12 ">
+                            <h2 class="py-5"><strong>Nuage de mots COVID-19</strong></h2>
+                            <div class="m-auto">
+                               
+                       
+                            <iframe style='width: 600px; height:350px;'
+                                src='https://voyant-tools.org/tool/Cirrus/?visible=255&corpus=f74aac53a40fb2309099c99dd274e401'></iframe>
+                               <p class="pt-3">Source :</p>
+                                <p class="pt-3"> <a href=" https://www.who.int/fr/health-topics/coronavirus/coronavirus#tab=tab_1 "> https://www.who.int/fr/health-topics/coronavirus/coronavirus#tab=tab_1 </a> </p>
+                
+                                <p > <a href="  https://sante.journaldesfemmes.fr/fiches-maladies/2619933-maladie-covid-19-coronavirus-signification-definition-nom-incubation-traitement-depistage-duree-evolution/ ">  https://sante.journaldesfemmes.fr/fiches-maladies/2619933-maladie-covid-19-coronavirus-signification-definition-nom-incubation-traitement-depistage-duree-evolution/ </a> </p>
+                                <p class=""> <a href="   https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/coronavirus-definition ">  https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois/coronavirus-definition</a> </p>
+                                <p class="outil pt-3"> <strong>Fait avec : Voyant Tools</strong></p>
+                            </div>
+                        </div>
+
+                 
+            
+            </div>
+            </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
- 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
 </html>
